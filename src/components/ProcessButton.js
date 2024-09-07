@@ -23,7 +23,7 @@ export const ProcessButton = ({ file, prompts }) => {
     setUploading(true);
     try {
       const response = await fetch(
-        "https://pdfxcel-api.onrender.com/process-pdf",
+        "https://pdfxcel-api.onrender.com/api/process-pdf/",
         {
           method: "POST",
           body: formData,
@@ -48,13 +48,20 @@ export const ProcessButton = ({ file, prompts }) => {
       // Clean ups
       link.remove();
       window.URL.revokeObjectURL(url);
-      setResponseMessage("File processed and downloaded successfully.");
+      setResponseMessage(
+        "File processed and downloaded successfully in downloads folder"
+      );
       console.log("File processed and downloaded successfully.");
     } catch (error) {
       setResponseMessage(`Error during file upload: ${error.message}`);
       console.error("Error during file upload:", error);
     } finally {
       setUploading(false);
+
+      // Display response message for 3 seconds
+      setTimeout(() => {
+        setResponseMessage("");
+      }, 5000); // 3000 milliseconds = 3 seconds
     }
   };
 
@@ -67,8 +74,15 @@ export const ProcessButton = ({ file, prompts }) => {
       >
         {uploading ? "Processing..." : "Process and Download"}
       </button>
-      {responseMessage && (
-        <p className="text-center mt-4 text-gray-700">{responseMessage}</p>
+      {/* Conditional Rendering for Response Message or Loader */}
+      {uploading ? (
+        <div className="flex items-center mt-4">
+          <span className="loader mr-2"></span> {/* Loader Component */}
+        </div>
+      ) : (
+        responseMessage && (
+          <p className="text-center mt-4 text-gray-700">{responseMessage}</p>
+        )
       )}
     </div>
   );
