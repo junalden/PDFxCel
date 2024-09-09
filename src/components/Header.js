@@ -86,18 +86,18 @@ export const Header = () => {
                       isActive ? activeClassName : inActiveClassName
                     }
                   >
-                    Services
+                    Other Tools
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
+                  <Link
                     to="/Dashboard"
                     className={({ isActive }) =>
                       isActive ? activeClassName : inActiveClassName
                     }
                   >
-                    Pricing
-                  </NavLink>
+                    Quick Start
+                  </Link>
                 </li>
                 <li>
                   <button

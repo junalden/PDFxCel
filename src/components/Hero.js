@@ -28,7 +28,8 @@ export const Hero = () => {
           </svg>
         </Link>
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          Convert, Transform, and Clean your PDF data powered by AI.
+          More than just a basic parser, <br /> an intelligent reader powered by
+          AI
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           We use cutting-edge AI to transform and clean your PDF data exactly

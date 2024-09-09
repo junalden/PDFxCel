@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export const SidebarDashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
 
@@ -62,10 +63,7 @@ export const SidebarDashboard = () => {
         {/* Sidebar content */}
 
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center ps-2.5 mb-5"
-          >
+          <Link to="/" className="flex items-center ps-2.5 mb-5">
             <img
               src="https://flowbite.com/docs/images/logo.svg"
               className="h-6 me-3 sm:h-7"
@@ -74,7 +72,7 @@ export const SidebarDashboard = () => {
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               PDFxCel
             </span>
-          </a>
+          </Link>
           <ul className="space-y-2 font-medium">
             <li>
               <a
