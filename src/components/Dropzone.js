@@ -72,11 +72,11 @@ export const Dropzone = ({ onFileSelect }) => {
                 {/* 16:9 aspect ratio */}
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/T42tb9T66EQ?controls=1&showinfo=0&rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/OCWj5xgu5Ng?controls=1&showinfo=0&rel=0&modestbranding=1"
                   title="YouTube video player"
-                  frameBorder="0"
+                  // frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen={false}
+                  allowFullScreen={true}
                 ></iframe>
               </div>
             </div>

@@ -19,9 +19,13 @@ export const OverviewCard = () => {
             Convert, Transform, and Clean your PDF data powered by AI.
           </h2>
           <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-            Flowbite helps you connect with friends and communities of people
-            who share your interests. Connecting with your friends and family as
-            well as discovering new ones is easy with features like Groups.
+            Unlock the full potential of your PDF data with our AI-powered
+            solution, designed to convert, transform, and clean data
+            effortlessly. PDFxCel intelligently extracts, restructures, and
+            organizes data from PDFs, eliminating manual work and ensuring
+            accuracy. Say goodbye to formatting issues and inconsistencies—get
+            clean, ready-to-use data in just a few clicks, tailored to your
+            needs.
           </p>
           {/* <Link
             href="#"

@@ -72,21 +72,39 @@ export const FAQ = () => {
   const faqData = [
     {
       id: "item-1",
-      question: "What is Flowbite?",
+      question: "What does your AI-powered solution do?",
       answer:
-        "Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.",
+        "Our solution converts, transforms, and cleans data from PDFs using advanced AI technology. It extracts data accurately, restructures it into the desired format, and eliminates inconsistencies or formatting issues.",
     },
     {
       id: "item-2",
-      question: "Is there a Figma file available?",
+      question: "How does the AI work?",
       answer:
-        "Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.",
+        "The AI engine intelligently analyzes and interprets data within PDFs. It extracts text, tables, and other content, then processes and organizes this information to meet your specific needs, ensuring high accuracy and efficiency.",
     },
     {
       id: "item-3",
-      question: "What are the differences between Flowbite and Tailwind UI?",
+      question: "What types of PDFs can your solution handle?",
       answer:
-        "The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.",
+        "Our solution can handle a wide range of PDFs, including those with complex tables, unstructured text, and large volumes of data. Whether your PDFs are scanned documents or digital files, our AI is designed to process them effectively.",
+    },
+    {
+      id: "item-4",
+      question: "How do I get started?",
+      answer:
+        "To get started, simply upload your PDF files to our platform. Our AI will automatically begin the conversion, transformation, and cleaning process. Once complete, you can download the processed data in the format you need.",
+    },
+    {
+      id: "item-5",
+      question: "Is my data secure?",
+      answer:
+        "Yes, we prioritize data security and confidentiality. Your files are processed using secure protocols, and we do not store any personal or sensitive information beyond the processing session.",
+    },
+    {
+      id: "item-6",
+      question: "Can I integrate the processed data into other systems?",
+      answer:
+        "Absolutely. Our solution provides data in formats that are easy to integrate into other systems, databases, or analysis tools, making it seamless to use in your existing workflows.",
     },
   ];
 
@@ -109,8 +127,8 @@ export const FAQ = () => {
             answer={item.answer}
             isOpen={openIndex === index}
             onToggle={() => toggleItem(index)}
-            isFirst={index === 0} // Apply rounded corners to the first item
-            isLast={index === faqData.length - 1} // Apply rounded corners to the last item
+            isFirst={index === 0}
+            isLast={index === faqData.length - 1}
           />
         ))}
       </div>

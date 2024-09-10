@@ -5,7 +5,6 @@ export const Footer = () => {
   return (
     <>
       <div className="mb-24">
-        {" "}
         {/* Add bottom margin to ensure space between content and footer */}
         {/* Your content goes here */}
       </div>
@@ -14,50 +13,30 @@ export const Footer = () => {
           <span className="text-sm text-gray-500 dark:text-gray-400">
             © 2024{" "}
             <Link to="/" className="hover:underline">
-              CineZone
+              PDFxCel
             </Link>
             . All Rights Reserved.
           </span>
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 space-x-4 md:space-x-6 sm:mt-0">
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://kodego.ph/"
-                className="hover:underline"
-              >
+              <Link to="/about" className="hover:underline">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://kodego.ph/"
-                className="hover:underline"
-              >
+              <Link to="/privacy" className="hover:underline">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://kodego.ph/"
-                className="hover:underline"
-              >
-                Licensing
-              </a>
+              <Link to="/terms" className="hover:underline">
+                Terms of Use
+              </Link>
             </li>
             <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://kodego.ph/"
-                className="hover:underline"
-              >
+              <Link to="/contact" className="hover:underline">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
