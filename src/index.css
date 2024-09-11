@@ -26,3 +26,14 @@ main {
     transform: rotate(360deg);
   }
 }
+/* Apply smooth scrolling and text rendering optimizations globally */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  font-feature-settings: "kern" 1; /* Enable kerning */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve text rendering on Firefox on macOS */
+}
+/* scroll-behavior: smooth;: Enables smooth scrolling for anchor links and other scroll-related interactions.
+font-feature-settings: "kern" 1;: Enables kerning, which adjusts the spacing between characters to improve readability.
+-webkit-font-smoothing: antialiased;: Ensures that fonts are rendered more smoothly on WebKit-based browsers (like Chrome and Safari).
+-moz-osx-font-smoothing: grayscale;: Improves text rendering on Firefox on macOS. */

@@ -100,12 +100,6 @@ export const FAQ = () => {
       answer:
         "Yes, we prioritize data security and confidentiality. Your files are processed using secure protocols, and we do not store any personal or sensitive information beyond the processing session.",
     },
-    {
-      id: "item-6",
-      question: "Can I integrate the processed data into other systems?",
-      answer:
-        "Absolutely. Our solution provides data in formats that are easy to integrate into other systems, databases, or analysis tools, making it seamless to use in your existing workflows.",
-    },
   ];
 
   return (

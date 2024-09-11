@@ -69,29 +69,29 @@ export const Header = () => {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink
-                    to="/about"
+                    to="#"
                     className={({ isActive }) =>
                       isActive ? activeClassName : inActiveClassName
                     }
                   >
-                    About
+                    Use Case
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to="/Test"
+                    to="#"
                     className={({ isActive }) =>
                       isActive ? activeClassName : inActiveClassName
                     }
                   >
                     Other Tools
                   </NavLink>
-                </li>
+                </li> */}
                 <li>
                   <Link
-                    to="/Dashboard"
+                    to="/dashboard/main"
                     className={({ isActive }) =>
                       isActive ? activeClassName : inActiveClassName
                     }

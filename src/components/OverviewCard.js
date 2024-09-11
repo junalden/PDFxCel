@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Banner from "../assets/banner.png";
 
 export const OverviewCard = () => {
   return (
@@ -6,12 +7,12 @@ export const OverviewCard = () => {
       <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img
           className="w-full dark:hidden"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+          src={Banner}
           alt="dashboard image"
         />
         <img
           className="w-full hidden dark:block"
-          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+          src={Banner}
           alt="dashboard image"
         />
         <div className="mt-4 md:mt-0">

@@ -5,3 +5,5 @@ export { Terms } from "./Terms";
 export { Contact } from "./Contact";
 export { Privacy } from "./Privacy";
 export { About } from "./About";
+export { News } from "./News";
+export { Article } from "./Article";

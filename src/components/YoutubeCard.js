@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export const YoutubeCard = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 flex justify-center py-8">
+    <section
+      id="video-section"
+      className="bg-white dark:bg-gray-900 flex justify-center py-8"
+    >
       <div className="relative max-w-full md:max-w-3xl lg:max-w-4xl w-full overflow-hidden rounded-lg shadow-lg">
         <div className="p-4 text-center bg-transparent">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-black mb-2">
@@ -19,7 +22,7 @@ export const YoutubeCard = () => {
           {/* 16:9 aspect ratio */}
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src="https://www.youtube.com/embed/T42tb9T66EQ?controls=1&showinfo=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/6KQWwivvXmw?controls=1&showinfo=0&rel=0&modestbranding=1"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -41,7 +41,7 @@ export const ProcessButton = ({ file, prompts }) => {
       // Create a link element
       const link = document.createElement("a");
       link.href = url;
-      link.download = "gemini_response.xlsx"; // The filename for the downloaded file
+      link.download = "PDFxCel_result.xlsx"; // The filename for the downloaded file
       document.body.appendChild(link);
       link.click();
 

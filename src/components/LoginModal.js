@@ -26,7 +26,7 @@ const LoginModal = ({ isOpen, onClose }) => {
       if (response.ok) {
         localStorage.setItem("jwtToken", data.token); // Save the token
         // console.log("Token Set:", localStorage.getItem("jwtToken")); // Verify token storage
-        navigate("/dashboard");
+        navigate("/dashboard/main");
         onClose(); // Close modal or redirect as needed
       } else {
         setError(data.error);
@@ -82,7 +82,7 @@ const LoginModal = ({ isOpen, onClose }) => {
                 type="email"
                 id="email"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
-                placeholder="name@flowbite.com"
+                placeholder="name@gmail.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
