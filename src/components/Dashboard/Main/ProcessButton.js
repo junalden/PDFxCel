@@ -13,6 +13,8 @@ export const ProcessButton = ({ file, prompts }) => {
     // Clear previous response message
     setResponseMessage("");
 
+    //API NOT ACCEPTING
+    //DOUBLECHECK
     console.log("File:", file); // Log the file object
     console.log("Prompts:", prompts); // Log the prompts array
 

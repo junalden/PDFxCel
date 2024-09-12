@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-// Function to save matrix data to the backend
+// Save matrix data as templates for user
 const saveMatrixData = async (matrixData) => {
   try {
     const token = localStorage.getItem("jwtToken");
@@ -36,7 +36,7 @@ const saveMatrixData = async (matrixData) => {
   }
 };
 
-// Function to load matrix data
+// Load matrix id to load on the input boxes
 const loadMatrixData = async (matrixId) => {
   try {
     const token = localStorage.getItem("jwtToken");
@@ -64,7 +64,7 @@ const loadMatrixData = async (matrixId) => {
   }
 };
 
-// Function to load available matrices
+// Load all matrix available to user
 const loadAvailableMatrices = async () => {
   try {
     const token = localStorage.getItem("jwtToken");
@@ -99,7 +99,7 @@ export const DataConvertMatrix = ({ onDataChange }) => {
   const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
-  // Function to refresh the matrix dropdown
+  // Refresh the matrix dropdown when user save a new matrix
   const refreshMatrixDropdown = async () => {
     try {
       const matrices = await loadAvailableMatrices();
@@ -110,6 +110,7 @@ export const DataConvertMatrix = ({ onDataChange }) => {
   };
 
   // Load available matrices on component mount
+  // DOUBLECHECK
   useEffect(() => {
     refreshMatrixDropdown();
   }, []);
