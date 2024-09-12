@@ -15,6 +15,7 @@ import { Main } from "../components/Dashboard/Main";
 import { Templates } from "../components/Dashboard/Templates";
 import { PDFAnalyzer } from "../components/Dashboard/PDFAnalyzer";
 import { AccountSettings } from "../components/Dashboard/AccountSettings";
+import FileUpload from "../components/Dashboard/FileUpload";
 
 export const AllRoutes = () => {
   return (
@@ -24,7 +25,7 @@ export const AllRoutes = () => {
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="main" element={<Main />} />
           <Route path="templates" element={<Templates />} />
-          <Route path="pdfanalyzer" element={<PDFAnalyzer />} />
+          <Route path="fileupload" element={<FileUpload />} />
           <Route path="accountsettings" element={<AccountSettings />} />
         </Route>
         <Route path="/terms" element={<Terms />} />
